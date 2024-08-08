@@ -1,14 +1,15 @@
 "use client";
 
 import Patterns from "@/components/patterns/Patterns";
+import Raging from "@/components/raging/Raging";
 import { OrbitControls } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 
 export default function Home() {
   return (
-    <Canvas camera={{ position: [0.25, -0.25, 1] }}>
+    <Canvas flat camera={{ position: [1, 1, 1] }}>
       <OrbitControls enableDamping />
-      <Patterns />
+      <Raging />
     </Canvas>
   );
 }
