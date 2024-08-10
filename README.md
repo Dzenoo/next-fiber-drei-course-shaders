@@ -7,11 +7,8 @@ This repository contains a collection of shader and 3D model-based experiments b
 - [Installation](#installation)
 - [Project Structure](#project-structure)
 - [Usage](#usage)
-- [Components Overview](#components-overview)
-- [Shaders](#shaders)
 - [Assets](#assets)
 - [Contributing](#contributing)
-- [License](#license)
 
 ## Installation
 
