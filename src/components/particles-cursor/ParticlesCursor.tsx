@@ -1,8 +1,8 @@
 "use client";
+import * as THREE from "three";
 import React, { useEffect, useMemo, useRef } from "react";
 import vertexShader from "./vertex.glsl";
 import fragmentShader from "./fragment.glsl";
-import * as THREE from "three";
 import { useFrame, useThree } from "@react-three/fiber";
 import { useTexture } from "@react-three/drei";
 

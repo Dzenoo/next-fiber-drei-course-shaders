@@ -1,9 +1,9 @@
 "use client";
+import * as THREE from "three";
 import React, { useEffect, useRef } from "react";
 import gpgpuParticlesShader from "./gpgpu/particles.glsl";
 import particlesVertexShader from "./particles/vertex.glsl";
 import particlesFragmentShader from "./particles/fragment.glsl";
-import * as THREE from "three";
 import { useGLTF } from "@react-three/drei";
 import { GPUComputationRenderer } from "three/examples/jsm/Addons.js";
 import { useFrame, useThree } from "@react-three/fiber";

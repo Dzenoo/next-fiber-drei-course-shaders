@@ -1,9 +1,9 @@
 "use client";
+import * as THREE from "three";
 import React, { useEffect, useRef } from "react";
 import vertexShader from "./vertex.glsl";
 import fragmentShader from "./fragment.glsl";
 import CustomShaderMaterial from "three-custom-shader-material/vanilla";
-import * as THREE from "three";
 import { useFrame, useThree } from "@react-three/fiber";
 import { Brush, Evaluator, SUBTRACTION } from "three-bvh-csg";
 import { Environment } from "@react-three/drei";

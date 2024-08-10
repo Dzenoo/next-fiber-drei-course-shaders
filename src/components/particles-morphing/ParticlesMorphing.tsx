@@ -1,9 +1,9 @@
 "use client";
-import React, { useEffect, useRef } from "react";
 import * as THREE from "three";
+import React, { useEffect, useRef } from "react";
+import gsap from "gsap";
 import { useGLTF } from "@react-three/drei";
 import { useThree } from "@react-three/fiber";
-import gsap from "gsap";
 import vertexShader from "./vertex.glsl";
 import fragmentShader from "./fragment.glsl";
 
@@ -92,7 +92,6 @@ const ParticlesMorphing: React.FC = () => {
     };
 
     return () => {
-      // Clean up the points and scene
       scene.remove(points);
       geometry.dispose();
       material.dispose();
@@ -101,7 +100,6 @@ const ParticlesMorphing: React.FC = () => {
 
   const morph = (index: number) => {
     if (particles.current) {
-      // Update the position and target attributes
       particles.current.geometry.setAttribute(
         "position",
         particles.current.positionsParticles[particles.current.index]
@@ -113,7 +111,6 @@ const ParticlesMorphing: React.FC = () => {
       particles.current.geometry.attributes.position.needsUpdate = true;
       particles.current.geometry.attributes.aPositionTarget.needsUpdate = true;
 
-      // Animate the progress from 0 to 1
       gsap.fromTo(
         particles.current.material.uniforms.uProgress,
         { value: 0 },
@@ -125,7 +122,7 @@ const ParticlesMorphing: React.FC = () => {
   };
 
   useEffect(() => {
-    const handleClick = () => morph((particles.current.index + 1) % 4); // Cycle through targets
+    const handleClick = () => morph((particles.current.index + 1) % 4);
     document.addEventListener("click", handleClick);
 
     return () => {

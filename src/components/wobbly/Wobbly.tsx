@@ -1,10 +1,10 @@
 "use client";
+import * as THREE from "three";
 import React, { useRef } from "react";
 import vertexShader from "./vertex.glsl";
 import fragmentShader from "./fragment.glsl";
 import CustomShaderMaterial from "three-custom-shader-material/vanilla";
 import { mergeVertices } from "three/addons/utils/BufferGeometryUtils.js";
-import * as THREE from "three";
 import { useFrame, useThree } from "@react-three/fiber";
 import { Environment } from "@react-three/drei";
 

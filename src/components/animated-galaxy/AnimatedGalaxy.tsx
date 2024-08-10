@@ -1,8 +1,8 @@
 "use client";
-import React, { useEffect, useRef, useCallback } from "react";
-import vertexShader from "./vertex.glsl";
-import fragmentShader from "./fragment.glsl";
 import * as THREE from "three";
+import React, { useEffect, useRef, useCallback } from "react";
+import fragmentShader from "./fragment.glsl";
+import vertexShader from "./vertex.glsl";
 import { useFrame, useThree } from "@react-three/fiber";
 import { useControls } from "leva";
 

@@ -1,8 +1,8 @@
 "use client";
+import * as THREE from "three";
 import React from "react";
 import vertexShader from "./vertex.glsl";
 import fragmentShader from "./fragment.glsl";
-import * as THREE from "three";
 
 const Patterns: React.FC = () => {
   return (

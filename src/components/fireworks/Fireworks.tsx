@@ -1,10 +1,10 @@
 "use client";
+import * as THREE from "three";
 import React, { useEffect } from "react";
 import vertexShader from "./vertex.glsl";
 import fragmentShader from "./fragment.glsl";
-import * as THREE from "three";
-import { useTexture } from "@react-three/drei";
 import gsap from "gsap";
+import { useTexture } from "@react-three/drei";
 import { useThree } from "@react-three/fiber";
 
 const Fireworks: React.FC = () => {

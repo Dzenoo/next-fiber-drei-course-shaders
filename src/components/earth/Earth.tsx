@@ -1,10 +1,10 @@
 "use client";
+import * as THREE from "three";
 import React, { useRef } from "react";
 import earthVertexShader from "./earth-shaders/vertex.glsl";
 import earthFragmentShader from "./earth-shaders/fragment.glsl";
 import atmosphereVertexShader from "./atmosphere-shaders/vertex.glsl";
 import atmosphereFragmentShader from "./atmosphere-shaders/fragment.glsl";
-import * as THREE from "three";
 import { useTexture } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
 

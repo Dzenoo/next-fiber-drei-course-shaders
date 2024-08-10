@@ -1,8 +1,8 @@
 "use client";
+import * as THREE from "three";
 import React, { useEffect, useRef } from "react";
 import vertexShader from "./vertex.glsl";
 import fragmentShader from "./fragment.glsl";
-import * as THREE from "three";
 import { useGLTF } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
 
